@@ -1,12 +1,11 @@
+import Navbar from './components/navbar/Navbar.jsx'
 
-
-
-function App() {
-
-
+function App () {
   return (
     <>
- <h1>BookStore... Empezando proyecto</h1>
+    <Navbar/>
+      <h1>BookStore... Empezando proyecto</h1>
+
     </>
   )
 }
