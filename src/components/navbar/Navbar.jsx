@@ -1,5 +1,5 @@
 import { NavContainer, NavLogo, NavTitle } from './NavbarStyled'
-import logo from '../assets/logo.png'
+import logo from '../assets/prueba.png'
 
 const Navbar = () => {
   return (

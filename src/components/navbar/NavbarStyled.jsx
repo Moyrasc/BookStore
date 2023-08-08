@@ -2,24 +2,30 @@ import styled from 'styled-components'
 
 const NavContainer = styled.div`
 background-color: #0e4749;
-height: 100px;
+height: 150px;
 display: flex;
 justify-content: flex-start;
 
 `
 const NavTitle = styled.h1`
-font-family:  'Fira Sans', sans-serif;;
+font-family:  'Fira Sans', sans-serif;
 color:#f0e9e0;
 display: flex;
 align-items: center;
+font-size: 40px;
+padding: 2.7rem 0rem 0rem 1rem;
 `
 const NavLogo = styled.div`
 display: flex;
-align-items: center;
+align-items: flex-start;
+padding: 1rem 0rem 0rem 2rem;
 
 & img {
-  height: 180px;
-  width:150px
+  height: 100px;
+  width:110px
+}
+@media (max-width: 767px) {
+  padding: 1rem 0rem 0rem 1rem
 }
 `
 export {
