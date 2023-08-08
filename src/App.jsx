@@ -9,7 +9,7 @@ function App () {
     <>
       <Navbar />
       <AppContainer>
-        <h2> ??? Libros disponibles</h2>
+        <h2> {booksData.library.length} Libros disponibles</h2>
         <h3> ?? en la lista de lectura</h3>
         <FilterPage />
         <BooksGallery books={booksData.library} />

@@ -13,7 +13,8 @@ const BooksGallery = ({ books }) => {
             </div>
             <div className='flip-card-back'>
               <p>{book.book.synopsis}</p>
-              <p>{book.book.author.name}</p>
+              <p>Autor: {book.book.author.name}</p>
+              <p>ISBN: {book.book.ISBN}</p>
             </div>
           </div>
         </Books>

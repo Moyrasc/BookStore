@@ -2,36 +2,33 @@ import styled from 'styled-components'
 
 const BookContainer = styled.div`
 display:grid;
-gap:1.3rem;
+gap:1rem;
 grid-auto-rows:30rem;
-grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
+grid-template-columns: repeat(auto-fill,minmax(16rem,1fr));
+justify-items: center;
 
 `
 const Books = styled.div`
 perspective: 2000px;
+width: 320px;
+height: 504px;
 & h4{
-    padding:1rem 0;
+    padding:0.8rem 0;
     text-align:center;
     font-family: 'PT Serif Caption', serif;
 }
-& img {
-    height: 350px;
-    width: 250px;
-    justify-content:center;
-}
+
 & .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-//   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-//   border-radius: 15px;
   transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
   transform-style: preserve-3d;
 }
 & .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
-  height: 80%;
+  height: 77%;
  
   backface-visibility: hidden;
 }
@@ -47,14 +44,16 @@ perspective: 2000px;
   font-size: 1.25rem;
   text-align: center;
   display: grid;
-  place-items: center;
   padding: 32px;
   background-color: #0e4749;
   color:#f0e9e0;
+    // color:black;
   
   transform: rotateY(180deg);
   & p {
-    font-family: 'Lobster Two', cursive;
+    font-family: 'PT Serif Caption', serif;
+    font-size:16px;
+    text-align:left;
   }
 }
 &:hover .flip-card-inner {
