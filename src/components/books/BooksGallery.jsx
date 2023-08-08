@@ -6,8 +6,8 @@ const BooksGallery = ({ books }) => {
     <BookContainer>
       {books.map((book, index) => (
         <Books className='flip-card' key={index}>
+          <h4>{book.book.title}</h4>
           <div className='flip-card-inner'>
-            <h4>{book.book.title}</h4>
             <div className='flip-card-front'>
               <img src={book.book.cover} alt={book.book.title} />
             </div>

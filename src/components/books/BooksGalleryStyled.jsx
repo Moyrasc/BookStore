@@ -47,7 +47,8 @@ height: 504px;
   padding: 32px;
   background-color: #0e4749;
   color:#f0e9e0;
-    // color:black;
+  place-content: space-evenly;
+
   
   transform: rotateY(180deg);
   & p {
