@@ -1,5 +1,5 @@
 import { NavContainer, NavLogo, NavTitle } from './NavbarStyled'
-import logo from '../assets/logo-removebg.png'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
   return (

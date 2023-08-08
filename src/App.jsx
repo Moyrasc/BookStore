@@ -1,11 +1,16 @@
+import { AppContainer } from '../AppStyled.jsx'
+import FilterPage from './components/fliter/FilterPage.jsx'
 import Navbar from './components/navbar/Navbar.jsx'
 
 function App () {
   return (
     <>
-    <Navbar/>
-      <h1>BookStore... Empezando proyecto</h1>
-
+      <Navbar />
+      <AppContainer>
+        <h2> ??? Libros disponibles</h2>
+        <h3> ?? en la lista de lectura</h3>
+        <FilterPage />
+      </AppContainer>
     </>
   )
 }
