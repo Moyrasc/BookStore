@@ -8,3 +8,6 @@ body {
   height: 100vh;
   background-color: #f0e9e0;
 }
+.css-5vf13z-MuiInputBase-root-MuiInput-root:after {
+  border-bottom: 2px solid #0e4749 !important;
+}

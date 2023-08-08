@@ -1,13 +1,17 @@
 import { useState } from 'react'
-import { AppContainer } from '../AppStyled.jsx'
+import { AppContainer, FiltersContainer } from '../AppStyled.jsx'
 import BooksGallery from './components/books/BooksGallery.jsx'
 import FilterPage from './components/fliter/FilterPage.jsx'
 import Navbar from './components/navbar/Navbar.jsx'
 import booksData from './data/books.json'
+import NativeSelectDemo from './components/fliter/FilterSelect.jsx'
 
 function App () {
   const [pagesFilter, setPagesFilter] = useState(30)
-  const filteredBooks = booksData.library.filter(book => book.book.pages >= pagesFilter)
+  const [genreFilter, setGenreFilter] = useState('')
+  const filteredBooks = booksData.library.filter(
+    book => book.book.pages >= pagesFilter && (genreFilter === '' || book.book.genre === genreFilter)
+  )
 
   return (
     <>
@@ -15,8 +19,12 @@ function App () {
       <AppContainer>
         <h2> {booksData.library.length} Libros disponibles</h2>
         <h3> ?? en la lista de lectura</h3>
-        <FilterPage setPagesFilter={setPagesFilter} />
-        <BooksGallery books={filteredBooks} />
+        <FiltersContainer>
+          <FilterPage setPagesFilter={setPagesFilter} />
+          <NativeSelectDemo setGenreFilter={setGenreFilter} />
+        </FiltersContainer>
+
+        <BooksGallery books={filteredBooks} pagesFilter={pagesFilter} genreFilter={genreFilter} />
       </AppContainer>
     </>
   )

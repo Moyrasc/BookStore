@@ -18,10 +18,13 @@ const FilterPage = ({ setPagesFilter }) => {
             defaultValue={40}
             getAriaValueText={valuetext}
             valueLabelDisplay='auto'
-            color='success'
             step={10}
             min={40}
             max={1200}
+            sx={{
+              color: '#0e4749',
+              paddingTop: 5
+            }}
           />
 
         </Box>

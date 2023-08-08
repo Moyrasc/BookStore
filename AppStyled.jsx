@@ -15,7 +15,13 @@ padding:2rem 3rem;
   padding: 1rem 0rem 1rem 2rem;
 }
 `
-
+const FiltersContainer = styled.div`
+display:flex;
+justify-content: space-between;
+align-items: center;
+width: 40%;
+`
 export {
-  AppContainer
+  AppContainer,
+  FiltersContainer
 }
