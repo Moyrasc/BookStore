@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const AppContainer = styled.div`
 display:flex;
 flex-direction: column;
-padding:3rem;
+padding:2rem;
 & h2{
   font-family: 'Lobster Two', cursive;
   font-size:35px;
