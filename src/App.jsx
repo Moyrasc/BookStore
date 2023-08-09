@@ -23,7 +23,6 @@ function App () {
           <FilterPage setPagesFilter={setPagesFilter} />
           <NativeSelectDemo setGenreFilter={setGenreFilter} />
         </FiltersContainer>
-
         <BooksGallery books={filteredBooks} pagesFilter={pagesFilter} genreFilter={genreFilter} />
       </AppContainer>
     </>
