@@ -61,7 +61,14 @@ height: 504px;
   transform: rotateY(-180deg);
 }
 `
+const TitleList = styled.h2`
+  font-family: 'Lobster Two', cursive;
+  font-size:35px;
+  padding: 1rem 0rem ;
+  text-align: center
+`
 export {
   BookContainer,
-  Books
+  Books,
+  TitleList
 }

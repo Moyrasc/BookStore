@@ -28,7 +28,11 @@ width: 100%;
   }
 
 `
+const BooksContainer = styled.div`
+
+`
 export {
   AppContainer,
-  FiltersContainer
+  FiltersContainer,
+  BooksContainer
 }
