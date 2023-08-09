@@ -26,7 +26,6 @@ const FilterPage = ({ setPagesFilter }) => {
               paddingTop: 5
             }}
           />
-
         </Box>
       </FilterContainer>
     </>

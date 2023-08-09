@@ -17,7 +17,6 @@ height: 504px;
     text-align:center;
     font-family: 'PT Serif Caption', serif;
 }
-
 & .flip-card-inner {
   position: relative;
   width: 100%;
@@ -29,7 +28,6 @@ height: 504px;
   position: absolute;
   width: 100%;
   height: 77%;
- 
   backface-visibility: hidden;
 }
 & .flip-card-front {
@@ -48,8 +46,6 @@ height: 504px;
   background-color: #0e4749;
   color:#f0e9e0;
   place-content: space-evenly;
-
-  
   transform: rotateY(180deg);
   & p {
     font-family: 'PT Serif Caption', serif;
@@ -67,8 +63,23 @@ const TitleList = styled.h2`
   padding: 1rem 0rem ;
   text-align: center
 `
+const Btn = styled.button`
+position:relative;
+top: 30px;
+z-index: 1;
+border-radius: 10px;
+height: 30px;
+border: none;
+background-color: #f0e9e0;
+cursor: pointer;
+font-weight: bold;
+color: #0e4749;
+font-family: 'PT Serif Caption', serif;
+
+`
 export {
   BookContainer,
   Books,
-  TitleList
+  TitleList,
+  Btn
 }

@@ -29,15 +29,13 @@ function App () {
       <Navbar />
       <AppContainer>
         <h2> {booksData.library.length} Libros disponibles</h2>
-        <h3> ?? en la lista de lectura</h3>
+        <h3> {selectedBooks.length === 0 ? 'No hay libros' : `${selectedBooks.length}`} en la lista de lectura</h3>
         <FiltersContainer>
           <FilterPage setPagesFilter={setPagesFilter} />
           <NativeSelectDemo setGenreFilter={setGenreFilter} />
         </FiltersContainer>
-
         <BooksGallery books={filteredBooks.filter(book => !selectedBooks.includes(book))} pagesFilter={pagesFilter} genreFilter={genreFilter} handleBookSelect={handleBookSelect} />
         <ListBooks selectedBook={selectedBooks} handleBookRemove={handleBookRemove} />
-
       </AppContainer>
     </>
   )
