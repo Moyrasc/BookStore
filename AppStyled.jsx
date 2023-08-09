@@ -7,7 +7,7 @@ padding:2rem 3rem;
 & h2, h3{
   font-family: 'Lobster Two', cursive;
   font-size:35px;
-  padding: 1rem 0rem ;
+  padding-bottom: 1rem  ;
   text-align: center
 }
 & h3{
@@ -16,7 +16,6 @@ padding:2rem 3rem;
 `
 const FiltersContainer = styled.div`
 display:flex;
-justify-content: space-evenly;
 align-items: center;
 width: 100%;
 

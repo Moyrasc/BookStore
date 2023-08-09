@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AppContainer, FiltersContainer } from '../AppStyled.jsx'
+import { AppContainer, BooksContainer, FiltersContainer } from '../AppStyled.jsx'
 import BooksGallery from './components/books/BooksGallery.jsx'
 import FilterPage from './components/fliter/FilterPage.jsx'
 import Navbar from './components/navbar/Navbar.jsx'
@@ -34,8 +34,10 @@ function App () {
           <FilterPage setPagesFilter={setPagesFilter} />
           <NativeSelectDemo setGenreFilter={setGenreFilter} />
         </FiltersContainer>
-        <BooksGallery books={filteredBooks.filter(book => !selectedBooks.includes(book))} pagesFilter={pagesFilter} genreFilter={genreFilter} handleBookSelect={handleBookSelect} />
-        <ListBooks selectedBook={selectedBooks} handleBookRemove={handleBookRemove} />
+        <BooksContainer>
+          <BooksGallery books={filteredBooks.filter(book => !selectedBooks.includes(book))} pagesFilter={pagesFilter} genreFilter={genreFilter} handleBookSelect={handleBookSelect} />
+          <ListBooks selectedBook={selectedBooks} handleBookRemove={handleBookRemove} />
+        </BooksContainer>
       </AppContainer>
     </>
   )
