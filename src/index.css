@@ -11,3 +11,10 @@ body {
 .css-5vf13z-MuiInputBase-root-MuiInput-root:after {
   border-bottom: 2px solid #0e4749 !important;
 }
+//TABS
+.css-8atqhb {
+  padding-bottom: 3rem !important;
+}
+.css-l9qrtr-MuiTabs-root .Mui-selected {
+  color: #0e4749 !important;
+}
