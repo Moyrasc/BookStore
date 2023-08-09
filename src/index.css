@@ -18,3 +18,6 @@ body {
 .css-l9qrtr-MuiTabs-root .Mui-selected {
   color: #0e4749 !important;
 }
+.css-heg063-MuiTabs-flexContainer {
+  justify-content: space-around;
+}

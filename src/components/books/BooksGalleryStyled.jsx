@@ -6,6 +6,7 @@ gap:1rem;
 grid-auto-rows:30rem;
 grid-template-columns: repeat(auto-fill,minmax(16rem,1fr));
 justify-items: center;
+padding-top:2rem
 
 `
 const Books = styled.div`

@@ -15,11 +15,9 @@ export default function TabsBooks ({
   handleBookSelect
 }) {
   const [value, setValue] = useState('allBooks')
-
   const handleChange = (event, newValue) => {
     setValue(newValue)
   }
-
   return (
     <Box sx={{ width: '100%' }}>
       <Tabs
@@ -29,6 +27,7 @@ export default function TabsBooks ({
         sx={{
           '.Mui-selected': { color: '#0e4749' },
           '& button': { fontWeight: 'bold', fontSize: '18px', fontFamily: 'PT Serif Caption' }
+
         }}
         aria-label='secondary tabs example'
       >

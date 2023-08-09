@@ -8,7 +8,7 @@ padding:2rem 3rem;
   font-family: 'Lobster Two', cursive;
   font-size:35px;
   padding-bottom: 1rem  ;
-  // text-align: center
+  text-align: center;
   padding-left: 2rem;
 }
 & h3{
