@@ -1,10 +1,19 @@
 import React from 'react'
 import { BookContainer, Books, Btn } from './BooksGalleryStyled'
 
-const ListBooks = ({ selectedBook, handleBookRemove }) => {
+const ListBooks = ({ selectedBook, handleBookRemove, pagesFilter, genreFilter }) => {
+  // Filtrado de libros
+  const filterBooks = (books) => {
+    return books.filter(
+      book => book.book.pages >= pagesFilter && (genreFilter === '' || book.book.genre === genreFilter)
+    )
+  }
+
+  const filteredBooks = filterBooks(selectedBook)
+
   return (
     <BookContainer>
-      {selectedBook?.map((book, index) => {
+      {filteredBooks?.map((book, index) => {
         return (
           <Books className='flip-card' key={index}>
             <h4>{book.book.title}</h4>

@@ -47,6 +47,8 @@ export default function TabsBooks ({
           <ListBooks
             selectedBook={selectedBooks}
             handleBookRemove={handleBookRemove}
+            pagesFilter={pagesFilter}
+            genreFilter={genreFilter}
           />
           )}
     </Box>
