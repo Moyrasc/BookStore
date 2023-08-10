@@ -10,7 +10,7 @@ padding: 2rem 0rem 3rem 2rem;
     padding-bottom:0.5rem
 }
 @media (max-width: 767px) {
-  padding: 1.5rem 0rem 1rem 2rem
+  padding: 1.5rem 0rem 1rem 4rem
 }
 `
 export {

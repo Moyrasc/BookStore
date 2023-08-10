@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const NavContainer = styled.div`
 background-color: #0e4749;
-height: 150px;
+height: 120px;
 display: flex;
 justify-content: flex-start;
 
@@ -13,19 +13,19 @@ color:#f0e9e0;
 display: flex;
 align-items: center;
 font-size: 40px;
-padding: 2.7rem 0rem 0rem 1rem;
+padding: 2.5rem 1rem 1rem 2rem;
 `
 const NavLogo = styled.div`
 display: flex;
 align-items: flex-start;
-padding: 1rem 0rem 0rem 2rem;
+padding: 0rem 0rem 1rem 3rem;
 
 & img {
   height: 100px;
   width:110px
 }
 @media (max-width: 767px) {
-  padding: 1rem 0rem 0rem 1rem
+  padding: 0rem 0rem 0rem 1rem
 }
 `
 export {

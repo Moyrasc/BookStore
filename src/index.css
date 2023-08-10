@@ -21,3 +21,9 @@ body {
 .css-heg063-MuiTabs-flexContainer {
   justify-content: space-around;
 }
+@media (max-width: 767px) {
+  .css-heg063-MuiTabs-flexContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

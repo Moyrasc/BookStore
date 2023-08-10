@@ -14,6 +14,16 @@ padding:2rem 3rem;
 & h3{
   font-size: 25px;
 }
+@media (max-width: 767px) {
+  padding: 1rem 1rem;
+  & h2, h3{
+    padding-left: 0rem;
+    font-size:30px;
+  }
+  & h3{
+    font-size: 22px;
+  }
+}
 `
 const FiltersContainer = styled.div`
 display:flex;
