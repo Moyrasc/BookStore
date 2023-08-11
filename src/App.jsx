@@ -10,6 +10,7 @@ function App () {
   const [pagesFilter, setPagesFilter] = useState(30)
   const [genreFilter, setGenreFilter] = useState('')
   const [selectedBooks, setSelectedBooks] = useState([])
+  const availableBooks = booksData.library.length - selectedBooks.length
   // libros seleccionados en mi biblioteca (almacenados en localStorage)
   const handleBookSelect = (selectedBook) => {
     setSelectedBooks((prevSelectedBooks) => {
@@ -39,7 +40,7 @@ function App () {
     <>
       <Navbar />
       <AppContainer>
-        <h2> {booksData.library.length} Libros disponibles</h2>
+        <h2> {availableBooks} Libros disponibles</h2>
         <h3> {selectedBooks.length === 0 ? 'No hay libros' : `${selectedBooks.length}`} en la lista de lectura</h3>
         <FiltersContainer>
           <FilterPage setPagesFilter={setPagesFilter} />

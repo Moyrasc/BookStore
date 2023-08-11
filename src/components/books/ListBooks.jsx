@@ -8,9 +8,7 @@ const ListBooks = ({ selectedBook, handleBookRemove, pagesFilter, genreFilter })
       book => book.book.pages >= pagesFilter && (genreFilter === '' || book.book.genre === genreFilter)
     )
   }
-
   const filteredBooks = filterBooks(selectedBook)
-
   return (
     <BookContainer>
       {filteredBooks?.map((book, index) => {
