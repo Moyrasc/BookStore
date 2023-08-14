@@ -5,15 +5,17 @@ import Box from '@mui/material/Box'
 import { useState } from 'react'
 import BooksGallery from '../books/BooksGallery'
 import ListBooks from '../books/ListBooks'
+import { useBooksContext } from '../../dataContext/DataContext'
 
-export default function TabsBooks ({
-  selectedBooks,
-  handleBookRemove,
-  filteredBooks,
-  pagesFilter,
-  genreFilter,
-  handleBookSelect
-}) {
+export default function TabsBooks () {
+  const {
+    selectedBooks,
+    handleBookRemove,
+    availableBooks,
+    pagesFilter,
+    genreFilter,
+    handleBookSelect
+  } = useBooksContext()
   const [value, setValue] = useState('allBooks')
   const handleChange = (event, newValue) => {
     setValue(newValue)
@@ -37,7 +39,7 @@ export default function TabsBooks ({
       {value === 'allBooks'
         ? (
           <BooksGallery
-            books={filteredBooks.filter(book => !selectedBooks.includes(book))}
+            books={availableBooks}
             pagesFilter={pagesFilter}
             genreFilter={genreFilter}
             handleBookSelect={handleBookSelect}

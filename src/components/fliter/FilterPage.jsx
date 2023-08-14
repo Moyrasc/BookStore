@@ -1,11 +1,19 @@
-import React from 'react'
 import Box from '@mui/material/Box'
 import Slider from '@mui/material/Slider'
 import { FilterContainer } from './FilterPageStyled'
+import { useEffect, useState } from 'react'
 
 const FilterPage = ({ setPagesFilter }) => {
+  const [sliderValue, setSliderValue] = useState(40)
+
+  useEffect(() => {
+    setPagesFilter(sliderValue)
+  }, [sliderValue, setPagesFilter])
+
+  const handleSliderChange = (event, newValue) => {
+    setSliderValue(newValue)
+  }
   const valuetext = (value) => {
-    setPagesFilter(value)
     return `${value} Pag.`
   }
   return (
@@ -18,6 +26,7 @@ const FilterPage = ({ setPagesFilter }) => {
             defaultValue={40}
             getAriaValueText={valuetext}
             valueLabelDisplay='auto'
+            onChange={handleSliderChange}
             step={10}
             min={40}
             max={1200}

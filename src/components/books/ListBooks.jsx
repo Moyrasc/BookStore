@@ -1,17 +1,22 @@
 import React from 'react'
 import { BookContainer, Books, Btn } from './BooksGalleryStyled'
+import { useBooksContext } from '../../dataContext/DataContext'
 
-const ListBooks = ({ selectedBook, handleBookRemove, pagesFilter, genreFilter }) => {
+const ListBooks = () => {
+  const {
+    selectedBooks,
+    handleBookRemove,
+    pagesFilter,
+    genreFilter
+  } = useBooksContext()
+
   // Filtrado de libros
-  const filterBooks = (books) => {
-    return books.filter(
-      book => book.book.pages >= pagesFilter && (genreFilter === '' || book.book.genre === genreFilter)
-    )
-  }
-  const filteredBooks = filterBooks(selectedBook)
+  const filteredSelectedBooks = selectedBooks.filter(
+    book => book.book.pages >= pagesFilter && (genreFilter === '' || book.book.genre === genreFilter)
+  )
   return (
     <BookContainer>
-      {filteredBooks?.map((book, index) => {
+      {filteredSelectedBooks?.map((book, index) => {
         return (
           <Books className='flip-card' key={index}>
             <h4>{book.book.title}</h4>
