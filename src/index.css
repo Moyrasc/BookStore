@@ -15,14 +15,23 @@ body {
 .css-8atqhb {
   padding-bottom: 3rem !important;
 }
-.css-l9qrtr-MuiTabs-root .Mui-selected {
+.Mui-selected {
   color: #0e4749 !important;
 }
 .css-heg063-MuiTabs-flexContainer {
   justify-content: space-around;
 }
-@media (max-width: 767px) {
+.MuiTabs-flexContainer {
+  justify-content: space-around;
+}
+.MuiTab-textColorPrimary @media (max-width: 767px) {
   .css-heg063-MuiTabs-flexContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.MuiTab-textColorPrimary @media (max-width: 767px) {
+  .MuiTabs-flexContainer {
     display: flex;
     flex-direction: column;
   }
