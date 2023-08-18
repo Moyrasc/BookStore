@@ -1,6 +1,6 @@
 # BookStore
 
-Desarrollo de una Aplicación de Lista de Libros.
+Desarrollo de una Aplicación de Lista de Libros utilizando React, jest y vitest.
 
 ## Contexto
 
@@ -41,3 +41,7 @@ Usa el archivo books.json para obtener los datos de los libros. Puedes añadir m
 - Añade un nuevo filtro para filtrar los libros por número de páginas.
 - Permitir la reorganización de los libros en la lista de lectura por prioridad.
 - Haz que tu diseño sea responsive.
+
+## Proyecto desplegado
+
+🚀  <https://book-store-moyrasc.vercel.app/>
