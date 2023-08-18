@@ -24,7 +24,7 @@ const BooksGallery = () => {
       {filteredAndAvailableBooks.map((book, index) => {
         return (
           <Books className='flip-card' key={index} onClick={() => handleBookClick(book)}>
-            <h4>{book.book.title}</h4>
+            <h4 data-testid='book-title'>{book.book.title}</h4>
             <div className='flip-card-inner'>
               <div className='flip-card-front'>
                 <img src={book.book.cover} alt={book.book.title} />
