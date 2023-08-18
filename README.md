@@ -2,6 +2,8 @@
 
 Desarrollo de una Aplicación de Lista de Libros utilizando React, jest y vitest.
 
+<img src='src\components\assets\design-book-store.png' alt='image-bookstore'>
+
 ## Contexto
 
 Somos un sello editorial de libros multinacional. Queremos ofrecer a nuestro público una forma de ver nuestro catálogo y poder guardar los libros que les interesan en una lista de lectura.
